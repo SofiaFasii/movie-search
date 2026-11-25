@@ -1,0 +1,2 @@
+"use strict";(globalThis.webpackChunkmovie_search||=[]).push([[207],{207(e,r,n){n.r(r),n.d(r,{default:()=>t});var s=n(579);function t(){return(0,s.jsxs)(s.Fragment,{children:[(0,s.jsx)("input",{}),(0,s.jsx)("button",{children:"Search"})]})}}}]);
+//# sourceMappingURL=207.320b5e0b.chunk.js.map

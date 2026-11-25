@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
 import { fetchTrendingMovies } from "../api/moviesApi"
+import MovieCard from "../components/MovieCard/MovieCard"
+import { Link } from "react-router-dom"
 export default function Home(){
     const [movies, setMovies] = useState([])
     useEffect(() => {
@@ -19,10 +21,11 @@ export default function Home(){
             <ul>
                 {movies.map((movie) => (
                     <div key={movie.id}>
-                        <li><a href='#'>{movie.original_title}</a></li>
+                        <li><Link to={`/movies/${movie.id}`}>{movie.original_title}</Link></li>
                     </div>
                 ))}
             </ul>
         </>
     )
 }
+//propTypes

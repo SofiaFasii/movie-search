@@ -17,3 +17,12 @@ export const fetchMovies = async (url) => {
 export const fetchTrendingMovies = () => {
     return fetchMovies('/trending/movie/day')
 }
+export const fetchMovieDetails = (movieId) => {
+    return fetchMovies(`/movie/${movieId}`)
+}
+export const fetchMovieCast = (movieId) => {
+    return fetchMovies(`/movie/${movieId}/credits`)
+}
+export const fetchMovieReviews = (movieId) => {
+    return fetchMovies(`/movie/${movieId}/reviews`)
+}
